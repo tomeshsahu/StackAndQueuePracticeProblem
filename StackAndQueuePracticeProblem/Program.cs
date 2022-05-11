@@ -6,7 +6,7 @@ bool check = true;
 while (check)
 {
 
-    Console.WriteLine("1. UC1-PushElementInStack");
+    Console.WriteLine("1. UC1-PushElementInStack\n2. UC2-PeekElementFromStack");
     Console.WriteLine("Enter option for Execute the Program");
 
     int option = Convert.ToInt32(Console.ReadLine());
@@ -22,7 +22,12 @@ while (check)
             Console.WriteLine("----------------------");
             break;
         
-            case 0:
+        case 2:
+            UC2StackPeekPop stack1 = new UC2StackPeekPop();
+            stack1.Peek();
+            break;
+
+        case 0:
             check = false;
             break;
 
