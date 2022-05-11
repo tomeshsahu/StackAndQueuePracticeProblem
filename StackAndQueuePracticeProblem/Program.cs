@@ -6,7 +6,7 @@ bool check = true;
 while (check)
 {
 
-    Console.WriteLine("1. UC1-PushElementInStack\n2. UC2-PeekElementFromStack\n3.UC3-AddElementInQueue");
+    Console.WriteLine("1. UC1-PushElementInStack\n2. UC2-PeekElementFromStack\n3.UC3-AddElementInQueue\n4. UC4-DeQueue Element");
     Console.WriteLine("Enter option for Execute the Program");
 
     int option = Convert.ToInt32(Console.ReadLine());
@@ -31,6 +31,11 @@ while (check)
             stack2.Enqueue(70);
             stack2.Enqueue(30);
             stack2.Enqueue(56);
+            break;
+
+        case 4:
+            UC4DeQueueElement stack3 = new UC4DeQueueElement();
+            stack3.Dequeue();
             break;
 
         case 0:
